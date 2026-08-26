@@ -14,9 +14,13 @@ export default function HeroSection(): React.JSX.Element {
                 title="SEE IT BEFORE IT EXISTS."
                 description="From plans to photorealistic experiences. Powered by ARIES."
                 primaryButton={{
-                  text: "Start a Project",              href: "#contact"}}
+                  text: "Start a Project ↗",
+                  href: "#contact"
+                }}
                 secondaryButton={{
-                  text: "Explore ARIES",              href: "#platform"}}
+                  text: "Explore ARIES ↗",
+                  href: "#platform"
+                }}
                 items={[
                   { imageSrc: "http://img.b2bpic.net/free-photo/design-house-modern-villa-with-open-plan-living-private-bedroom-wing-large-terrace-with-privacy_1258-169747.jpg" },
                   { imageSrc: "http://img.b2bpic.net/free-photo/3d-rendering-abstract-building_23-2150896916.jpg" },
