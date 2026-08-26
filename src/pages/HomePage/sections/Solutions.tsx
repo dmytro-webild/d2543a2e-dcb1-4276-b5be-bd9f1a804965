@@ -10,15 +10,12 @@ export default function SolutionsSection(): React.JSX.Element {
     <div id="solutions" data-section="solutions">
             <SectionErrorBoundary name="solutions">
               <PricingCenteredCards
-                tag="Professional Solutions"
-                title="Plans for Every Professional"
-                description="Tailored solutions for your specific design needs."
-                plans={[
-                  { tag: "Architects", price: "Custom", description: "Professional toolset for large firm projects.", features: ["Advanced Material Editing", "Team Collaboration", "Cloud Rendering"], primaryButton: { text: "Contact Sales", href: "#contact" } },
-                  { tag: "Developers", price: "Custom", description: "Scale development visualization effortlessly.", features: ["Bulk Image Generation", "API Integration", "Priority Scaling"], primaryButton: { text: "Contact Sales", href: "#contact" } }
-                ]}
-                textAnimation="slide-up"
-              />
+        tag="Custom Engagement"
+        title="Bespoke & Call-Based Pricing"
+        description="Every ARIES project is custom-tailored to your architectural scale, BIM requirements, and luxury visualization scope. Connect with our team for a tailored engagement proposal."
+        plans={[{"tag":"Enterprise & Firm Solutions","primaryButton":{"href":"#contact","text":"Schedule Consultation ↗"},"features":["Dedicated Architectural Visualization Director","Custom BIM & CAD Workflow Integration","Unlimited Ultra-HD Render & Motion Generation","Custom Material, Finish & Lighting Libraries","Priority SLA & Dedicated Support"],"secondaryButton":{"href":"#contact","text":"Request Quote ↗"},"description":"Full-scale integration for architecture firms, property developers, and master-planned developments.","price":"By Consultation"},{"features":["Complete Interactive Interior & Exterior Suites","Photorealistic Before/After Blueprint Transformations","Real-time Finish & Furniture Swapping Tools","Cinematic Architectural Video & Stills","Direct Architectural Review Sessions"],"primaryButton":{"href":"#contact","text":"Book Project Call ↗"},"description":"Turnkey visualization experiences for bespoke luxury residences, high-rises, and flagship commercial spaces.","tag":"Bespoke Project Engagement","price":"Custom Scope","secondaryButton":{"href":"#contact","text":"Inquire Now ↗"}}]}
+        textAnimation="slide-up"
+      />
             </SectionErrorBoundary>
           </div>
   );
