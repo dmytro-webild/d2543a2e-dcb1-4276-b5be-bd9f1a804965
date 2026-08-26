@@ -7,35 +7,13 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 
 export default function Layout() {
   const navItems = [
-  {
-    "name": "Platform",
-    "href": "#platform"
-  },
-  {
-    "name": "Solutions",
-    "href": "#solutions"
-  },
-  {
-    "name": "How It Works",
-    "href": "#how"
-  },
-  {
-    "name": "Pricing",
-    "href": "#pricing"
-  },
-  {
-    "name": "Hero",
-    "href": "#hero"
-  },
-  {
-    "name": "Metrics",
-    "href": "#metrics"
-  },
-  {
-    "name": "Testimonials",
-    "href": "#testimonials"
-  }
-];
+    { name: "Platform", href: "#platform" },
+    { name: "Workflow", href: "#how-it-works" },
+    { name: "Solutions", href: "#solutions" },
+    { name: "Metrics", href: "#metrics" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "FAQ", href: "#faq" }
+  ];
 
   return (
     <StyleProvider buttonVariant="expand" siteBackground="floatingGradient" heroBackground="lightRaysCenter">
