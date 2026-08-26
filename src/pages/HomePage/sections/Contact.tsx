@@ -10,7 +10,7 @@ export default function ContactSection(): React.JSX.Element {
     <div id="contact" data-section="contact">
             <SectionErrorBoundary name="contact">
               <ContactCta
-        tag="ARIES"
+        tag="ARIES Architecture Rendering Intelligence System"
         text="THE BUILDING DOESN’T EXIST YET. YOUR EXPERIENCE OF IT CAN. SEE IT BEFORE IT EXISTS."
         primaryButton={{"href":"#","text":"START YOUR PROJECT ↗"}}
         secondaryButton={{"href":"#platform","text":"EXPLORE ARIES ↗"}}

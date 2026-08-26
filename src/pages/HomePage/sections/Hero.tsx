@@ -61,7 +61,7 @@ const HeroInline = () => {
 
       <div className="relative z-10 flex items-center justify-between w-full px-6 md:px-12 max-w-7xl mx-auto">
         <div className="px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs tracking-[0.2em] font-mono text-white/80">
-          ARIES SYSTEM // ARCHITECTURAL INTELLIGENCE
+          ARIES // ARCHITECTURE RENDERING INTELLIGENCE SYSTEM
         </div>
         <a href="#contact" className="hidden sm:inline-block px-5 py-2 rounded-full bg-white text-black font-medium text-xs tracking-wider uppercase hover:bg-cyan-400 transition-colors">
           Start Project
