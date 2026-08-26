@@ -48,37 +48,43 @@ const HeroInline = () => {
   return (
     <section
       aria-label="Hero section"
-      className="relative flex flex-col items-center justify-center gap-8 md:gap-10 w-full min-h-svh pt-25 pb-20 md:pt-30"
+      className="relative flex flex-col items-center justify-between w-full min-h-screen pt-24 pb-12 overflow-hidden bg-[#030712]"
     >
-      <HeroBackgroundSlot />
-      <div className="flex flex-col items-center gap-3 w-content-width mx-auto text-center">
-        <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
-          <p>{"Next-Generation Rendering"}</p>
+      <div className="absolute inset-0 z-0">
+        <img
+          src="http://img.b2bpic.net/free-photo/design-house-modern-villa-with-open-plan-living-private-bedroom-wing-large-terrace-with-privacy_1258-169747.jpg"
+          alt="ARIES Architecture Rendering"
+          className="w-full h-full object-cover object-center brightness-[0.7] contrast-[1.05]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-[#030712]" />
+      </div>
+
+      <div className="relative z-10 flex items-center justify-between w-full px-6 md:px-12 max-w-7xl mx-auto">
+        <div className="px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs tracking-[0.2em] font-mono text-white/80">
+          ARIES SYSTEM // ARCHITECTURAL INTELLIGENCE
         </div>
+        <a href="#contact" className="hidden sm:inline-block px-5 py-2 rounded-full bg-white text-black font-medium text-xs tracking-wider uppercase hover:bg-cyan-400 transition-colors">
+          Start Project
+        </a>
+      </div>
 
-        <TextAnimation
-          text={"SEE IT BEFORE IT EXISTS."}
-          variant={"fade-blur"}
-          gradientText={true}
-          tag="h1"
-          className="md:max-w-8/10 text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-center text-balance"
-        />
-
-        <TextAnimation
-          text={"From plans to photorealistic experiences. Powered by ARIES."}
-          variant={"fade-blur"}
-          gradientText={false}
-          tag="p"
-          className="md:max-w-7/10 text-lg md:text-xl leading-snug text-balance"
-        />
-
-        <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
-          <Button text={primaryButton.text} href={primaryButton.href} variant="primary"/>
-          <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary"animationDelay={0.1} />
+      <div className="relative z-10 flex flex-col items-center text-center gap-4 px-4 my-auto">
+        <h1 className="text-7xl sm:text-9xl md:text-[12rem] font-extrabold tracking-tighter text-white uppercase leading-none drop-shadow-2xl">
+          ARIES
+        </h1>
+        <p className="text-lg sm:text-2xl md:text-3xl font-light tracking-[0.25em] text-white/90 uppercase max-w-3xl">
+          SEE IT BEFORE IT EXISTS.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4 mt-6">
+          <Button text="Start a Project ↗" href="#contact" variant="primary"/>
+          <Button text="Explore System ↗" href="#platform" variant="secondary"/>
         </div>
       </div>
 
-      <TiltedCarousel items={items} />
+      <div className="relative z-10 flex items-center gap-3 text-xs font-mono uppercase text-white/60 tracking-widest">
+        <span className="w-8 h-[1px] bg-white/40 animate-pulse" />
+        <span>Architectural Technology Experience</span>
+      </div>
     </section>
   );
 };
